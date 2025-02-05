@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Private Code</title>
+    <script>
+        function checkPassword() {
+            var password = prompt("请输入密码：");
+            if (password !== "MMC 2025") {
+                alert("密码错误！请刷新页面重新输入。");
+                return;
+            }
+            window.location.href = "code.html";  // 进入代码页面
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+</body>
+</html>
